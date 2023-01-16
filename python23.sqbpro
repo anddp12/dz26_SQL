@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/USER/Documents/Pathon/dz/python/dz26_SQL/python23.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="150"/><column_width id="3" width="1997"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,8:mainPython23"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Python23" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="125"/><column index="2" value="150"/><column index="3" value="157"/><column index="4" value="177"/><column index="5" value="147"/><column index="6" value="157"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE IF NOT EXISTS &quot;Python23&quot; (
+	&quot;Id&quot;	INTEGER NOT NULL UNIQUE,
+	&quot;Last Name&quot;	TEXT NOT NULL,
+	&quot;First Name&quot;	TEXT NOT NULL,
+	&quot;Middle Name&quot;	TEXT NOT NULL,
+	&quot;Stepcoin&quot;	INTEGER NOT NULL,
+	&quot;Diamonds&quot;	INTEGER NOT NULL
+);
+
+INSERT INTO &quot;Python23&quot; VALUES (1,&quot;Ярошкін&quot;,&quot;Сергій&quot;,&quot;Сергійович&quot;, 491, 200);
+INSERT INTO &quot;Python23&quot; VALUES (2,&quot;Таран&quot;,&quot;Андрій&quot;,&quot;Ігорович&quot;, 481, 197);
+INSERT INTO &quot;Python23&quot; VALUES (3,&quot;Бєлоусов&quot;,&quot;Юрій&quot;,&quot;Володимирович&quot;, 432, 173);
+INSERT INTO &quot;Python23&quot; VALUES (4,&quot;Зайченко&quot;,&quot;Михайло&quot;,&quot;Андрійович&quot;, 379, 165);
+INSERT INTO &quot;Python23&quot; VALUES (5,&quot;Марченко&quot;,&quot;Ілля&quot;,&quot;Андрійович&quot;, 379, 165);
+INSERT INTO &quot;Python23&quot; VALUES (6,&quot;Лозовий&quot;,&quot;Олексій&quot;,&quot;Андрійович&quot;, 277, 153);
+INSERT INTO &quot;Python23&quot; VALUES (7,&quot;Ахмедов&quot;,&quot;Ахмед&quot;,&quot;Анар Огли&quot;, 263, 149);
+INSERT INTO &quot;Python23&quot; VALUES (8,&quot;Діденко&quot;,&quot;Нікіта&quot;,&quot;Сергійович&quot;, 259, 146);
+INSERT INTO &quot;Python23&quot; VALUES (9,&quot;Рижков&quot;,&quot;Владислав&quot;,&quot;Андрійович&quot;, 222, 136);
+INSERT INTO &quot;Python23&quot; VALUES (10,&quot;Каштаєв&quot;,&quot;Артур&quot;,&quot;Віталійович&quot;, 220, 133);
+INSERT INTO &quot;Python23&quot; VALUES (11,&quot;Тараканов&quot;,&quot;Сергiй&quot;,&quot;Михайлович&quot;, 185, 123);
+INSERT INTO &quot;Python23&quot; VALUES (12,&quot;Стрельченко&quot;,&quot;Дмитро&quot;,&quot;Олександрович&quot;, 142, 120);
+
+DELETE FROM &quot;Python23&quot; 
+WHERE Stepcoin &lt; 200;
+
+UPDATE &quot;Python23&quot;
+SET Stepcoin = 486
+WHERE id == 2; 
+
+SELECT *
+FROM &quot;Python23&quot;
+WHERE Stepcoin &gt; 486;</sql><current_tab id="0"/></tab_sql></sqlb_project>
